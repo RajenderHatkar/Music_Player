@@ -1,0 +1,322 @@
+*{
+    font: 1rem sans-serif;
+    color: aliceblue;
+}
+/*nav bar */
+
+.nav-bar{
+    height: 12vh;
+    width: auto;
+    background-image: linear-gradient(180deg, rgb(62, 34, 146), rgba(71, 33, 33, 0));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: all ease-in-out 1s;
+
+}
+.nav-bar>div{
+    color: white;
+    
+    text-align: center;
+    
+}
+.title>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+ h2{
+    
+    font-size: 1rem;
+}
+.search-box{
+    width: 30%;
+    position: relative;
+   
+    
+}
+
+.search-box input{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+    border-radius: 30px;
+    background: white;
+    outline: none;
+    border: none;
+}
+
+.search-box button{
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    transform: scale(0.9);
+    color: gray;
+    background: white;
+}
+.extra{
+    width: 7vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.extra div{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.search-box i{
+    background: white;
+    
+}
+
+#search{
+    left: 0;
+    
+   
+}
+#search i, #mic i{
+  z-index: 3;
+  color: aqua;
+    
+   
+}
+
+#mic{
+    right: 0;
+    z-index: 5;
+}
+.Mp{
+    font-size: 1rem;
+    font-weight: 200;
+    
+}
+.fav-list a{
+    text-decoration: none; 
+ }
+
+.Mp:hover{
+    color: rgb(73, 137, 78);
+    
+    
+}
+/*main*/
+/*banner section*/
+main{
+    width: 100%;
+    margin-top: 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    transition: all ease-in-out 1s;
+    background: transparent;
+}
+
+/* Main Banner Section  */
+
+.aside {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.section-1 {
+    width: 68%;
+    height: 80vh;
+    overflow:scroll;
+    padding-left: 12px;
+    overflow-x: hidden;
+    background: transparent;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.card-size{
+    height: 68% !important;
+}
+/*section-2*/
+.song-img{
+    position: relative;
+    justify-content: space-around;
+    display: flex;
+    left: -10%;
+}
+
+.artist-queue{
+    box-sizing: border-box;
+    justify-content: space-around;
+    margin: 0.5%;
+    background-color: black;
+    display: flex;
+    border-radius: 10px;
+}
+.figure-info-queue{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.figure-info-queue img{
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px;
+    width: 50%;
+    min-width: 60px;
+    min-height: 60px;
+    height: 60%;
+
+}
+.heart-icons{
+    margin-top: 7%;
+    width: 13%;
+    display: grid;
+    justify-content: space-around;
+}
+
+
+/*side bar section*/
+.queue-section{
+    margin-left: 2%;
+    width: 28%;
+    height: 80vh;
+    overflow: scroll;
+
+}
+.queue-main{
+    display: inline;
+
+}
+
+/*side bar*/
+
+
+.dropdown{
+    position: relative !important;
+    top: -5%  !important;
+    float:right !important;
+
+
+}
+.btn-s{
+    background-color: rgb(83, 77, 97) !important;
+    padding:0px !important;
+    margin: 0px !important;
+
+}
+
+.queue-cont{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+
+}
+.number h2{
+    position: relative;
+    top:15% !important;
+}
+.figure-queue{
+    display: flex;
+    margin-left: 5px;
+}
+.figure-queue img{
+    width: 50%;
+    min-width: 60px;
+    min-height: 60px;
+    height: 60%;
+}
+.queue-song-info{
+    position: relative;
+    left: -25%;
+    height: 60%;
+}
+/*Music control*/
+.footer-base{
+    position: fixed;
+    top: 88%;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(107, 137, 137);
+    z-index: 2;
+
+}
+.foot-cont{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1%;
+    left: 6%;
+}
+.another-img {
+    position: relative;
+    display: flex;
+   
+}
+
+.symbl-icon{
+    position:relative;
+    left: -27%;
+}
+.controller{
+    display: inline;
+    position: relative;
+    left: 10%;
+    margin-block: 1%;
+    margin: 5px;
+    padding: 5px;
+    width: 30%;
+}
+.icon-controll{
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon-control i{
+    margin: 2px;
+}
+.slider{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+.slidecontainer{
+    width: 80%;
+}
+.slider{
+    width: 100%;
+}
+.time{
+    margin: 0 3%;
+    margin-top: 3%;
+}
+.volume{
+    left: 15%;
+    width: 20%;
+    display: flex;
+    position: relative;
+    margin-top: 3%;
+    justify-content: space-around;
+}
+.slidecontainer1{
+    width: 57%;
+}

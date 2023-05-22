@@ -1,0 +1,504 @@
+*{
+    font: 1rem sans-serif;
+    color: aliceblue;
+}
+/*nav bar */
+
+.nav-bar{
+    height: 12vh;
+    width: auto;
+    background-image: linear-gradient(180deg, rgb(62, 34, 146), rgba(71, 33, 33, 0));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: all ease-in-out 1s;
+
+}
+.nav-bar>div{
+    color: white;
+    text-align: center;
+    
+}
+.title>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+ h2{
+    
+    font-size: 1rem;
+}
+.search-box{
+    width: 30%;
+    position: relative;
+   
+    
+}
+
+.search-box input{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+    border-radius: 30px;
+    background: white;
+    outline: none;
+    border: none;
+}
+
+.search-box button{
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    transform: scale(0.9);
+    color: gray;
+    background: white;
+}
+.extra{
+    width: 7vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.extra div{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.search-box i{
+    background: white;
+    
+}
+
+#search{
+    left: 0;
+    
+   
+}
+#search i, #mic i{
+  z-index: 3;
+  color: aqua;
+    
+   
+}
+
+#mic{
+    right: 0;
+    z-index: 5;
+}
+.Mp{
+    font-size: 1rem;
+    font-weight: 200;
+    
+}
+.fav-list a{
+    text-decoration: none; 
+ }
+
+.Mp:hover{
+    color: rgb(73, 137, 78);
+    
+    
+}
+
+/*main*/
+/*banner section*/
+main{
+    width: 100%;
+    margin-top: 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    transition: all ease-in-out 1s;
+    background: transparent;
+}
+
+/* Main Banner Section  */
+
+.aside {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.section-1 {
+    width: 68%;
+    height: 80vh;
+    overflow:scroll;
+    padding-left: 12px;
+    overflow-x: hidden;
+    background: transparent;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    overflow: visible;
+    justify-content: center;
+}
+
+.box{
+    margin: 18px  !important;
+    transition: all ease-in-out 0.5s;
+}
+
+.box img{
+    height: 10vw;
+    width: 22.5vw;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0,0.1);
+    transition: 0.5s;
+    margin-left: -30px;
+    
+}
+
+.box:hover{
+    transform: scale(1.3);
+    z-index: 2;
+    transition: all ease-in-out 0.5s;
+}
+/*Latest Release*/
+.latest-releases{
+    position: relative;
+    top: 4vw;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.latest-releases>div{
+    display: inline-flex;
+    flex-direction: row;
+    height: 100px;
+    width: 47%;
+    margin: 15px 0px;
+    justify-content: space-around;
+}
+
+
+.card img {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    transition: all ease-in-out  1s;
+}
+
+.song-info {
+    float: right;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+/*popular*/
+.popular-art{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    top: 6vw;
+    box-sizing: border-box;
+}
+
+.pop-del {
+    background-color:  #4f5c68;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align:center;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.popular-art figure{
+    margin: 4px;
+}
+
+.popular-art img {
+    width: 10vw;
+    min-width: 60px;
+    min-height: 60px;
+    height: 10vw;
+    border-radius: 50%;
+}
+/* Music stations*/
+.stations{
+    position: relative;
+    display:flex;
+    top:18vh;
+    width: 100%;
+    height: auto;
+    box-sizing: content-box;
+}
+.station-logo{
+    margin: 2px;
+    padding: 2px;
+    margin-right: 30px;
+}
+.station-logo img{
+    width: 150px;
+    height: 150px;
+}
+.station-type{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4px;
+}
+.station-type figure{
+    margin: 0 2.5%;
+}
+.station-type img{
+    border-radius: 50%;
+    width: 100px;
+    height: 120px;
+
+}
+.station-type p{
+    color: rgb(204, 201, 209);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 50px;
+    font-size: 1rem;
+    font-weight: 900;
+    background: transparent
+}
+.station-type p:hover{
+    transition: all ease-in-out 1s;
+    color: rgb(209, 53, 142);
+}
+figure a{
+    text-decoration: none;
+    
+}
+
+/*BIg Banner*/
+.big-ban{
+    display: flex;
+    flex-direction: row;
+    margin-top: 13%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+.big-ban figure{
+    width: 22.5vw;
+    /*transition:all ease-in 0.5s;*/
+}
+.big-ban figure:hover{
+    transform: scale(0.5);
+    transition:all ease-in-out 0.5s;
+}
+.big-ban img{
+    width: 100%;
+    height: 180px;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+.big-ban p{
+    color: rgb(177, 173, 186);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 50px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background: transparent
+
+}
+.big-ban p:hover{
+    transition: all ease-in-out 1s;
+    color: chocolate;
+}
+/*latest Hindi English Telugu*/
+.songs-lat{
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    
+}
+.lat-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align:center;
+    justify-content: space-around;
+    text-decoration: none;
+}
+.lat-main figure{
+    margin: 4px 10px;
+}
+
+.lat-main img {
+    width: 10vw;
+    min-width: 60px;
+    min-height: 60px;
+    height: 10vw;
+}
+.lat-info{
+    margin-top: 3px;
+}
+.lat-info p{
+    color: rgb(43, 123, 145);
+}
+.lat-info h2{
+    color: black;
+}
+/*side bar section*/
+.queue-section{
+    margin-left: 2%;
+    width: 28%;
+    height: 80vh;
+    overflow: scroll;
+
+}
+
+/*side bar*/
+.queue-main{
+    display: inline;
+
+}
+.dropdown{
+    position: relative !important;
+    top: -5%  !important;
+    float:right !important;
+
+
+}
+.btn-s{
+    background-color: rgb(83, 77, 97) !important;
+    padding:0px !important;
+    margin: 0px !important;
+
+}
+
+.queue-cont{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+
+}
+.number h2{
+    position: relative;
+    top:15% !important;
+}
+.figure-queue{
+    display: flex;
+    margin-left: 5px;
+}
+.figure-queue img{
+    width: 50%;
+    min-width: 60px;
+    min-height: 60px;
+    height: 60%;
+}
+.queue-song-info{
+    position: relative;
+    left: -25%;
+    height: 60%;
+}
+/*Music control*/
+.footer-base{
+    position: fixed;
+    top: 88%;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(107, 137, 137);
+    z-index: 2;
+
+}
+.foot-cont{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1%;
+    left: 6%;
+}
+.another-img {
+    position: relative;
+    display: flex;
+   
+}
+.symbl-icon{
+    position:relative;
+    left: -27%;
+}
+.controller{
+    display: inline;
+    position: relative;
+    left: 10%;
+    margin-block: 1%;
+    margin: 5px;
+    padding: 5px;
+    width: 30%;
+}
+.icon-controll{
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon-control i{
+    margin: 2px;
+}
+.slider{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+.slidecontainer{
+    width: 80%;
+}
+.slider{
+    width: 100%;
+}
+.time{
+    margin: 0 3%;
+    margin-top: 3%;
+}
+.volume{
+    left: 15%;
+    width: 20%;
+    display: flex;
+    position: relative;
+    margin-top: 3%;
+    justify-content: space-around;
+}
+.slidecontainer1{
+    width: 57%;
+}
